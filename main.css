@@ -1,0 +1,157 @@
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    min-width: 20em;
+}
+
+img {
+    margin-bottom: -4px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em 2.5em;
+    font-size: .5rem;
+    background-color: #ffffff
+}
+
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-wrapper  .logo a {
+    font-size: 1.7rem;
+    color: #C57171;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5em;
+    font-size: .8rem;
+}
+
+.header-wrapper .nav a {
+    color: #555555;
+}
+
+.header-wrapper .nav a:hover {
+    color: #C57171;
+}
+
+main {
+    margin-top: 4em;
+}
+
+.arts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    padding: 4em 1em 0 1em;
+    text-align: center;
+}
+
+.container h2 {
+    color: #C57171;
+    margin-bottom: 3rem;
+}
+
+.container img {
+    max-width: 18.75em;
+    margin-bottom: 1em;
+}
+
+.about-me-desc {
+    background-color: #C57171;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-desc p {
+    padding: 3em 1em;
+    max-width: 62.5em;
+    text-align: center;
+}
+
+.contact-me-form {
+    background-color: #F2F2F2;
+    color: #1b1b1b;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me-form form {
+    width: 62.5em;
+    max-width: 62.5em;
+}
+
+.contact-me-form div {
+    padding: .5em 1em;
+}
+
+.contact-me-form label, 
+.contact-me-form input {
+    display: block;
+}
+
+.contact-me-form input,
+.contact-me-form button {
+    width: 100%;
+    border-radius: 2px;
+    padding: .7em;
+}
+
+.contact-me-form label {
+    padding-bottom: .5em;
+}
+
+.contact-me-form input {
+    border: 1px solid #c7c7c7; 
+}
+
+.contact-me-form button {
+    background-color: #555555;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    padding: 0 1em;
+    font-size: .7rem;
+}
+
+footer a {
+    color: #C57171;
+}
+
+@media (min-width: 43.8125em) {
+    .arts {
+        flex-direction: row;
+    }
+    .col {
+        flex: 1 1 10em;
+    }
+}
